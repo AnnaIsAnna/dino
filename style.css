@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.container_audio{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-template-rows: 590px; 
+	grid-template-areas: "header audio";
+	background-image: url(images/spot_and_arlo.jpg);
+	background-size: cover;
+	padding: 30px;
+}
+
+.audio_header{
+	grid-area: header;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 40px;
+	color: #562e02;
+	text-decoration: underline;
+	text-shadow:  -3px -3px 3px #fee6b7, -5px -5px 4px #e7d780;
+	
+}
+
+.audio_files{
+	grid-area: audio;
+	font-family: 'Neucha', cursive;
+	font-size: 20px;
+	
+}
+
+.audio_files ul{
+	list-style: none;
+	
+}
+
+.audio_files li{
+	padding: 10px;
+}
+
+.video1{
+	grid-area: video1;
+}
+
+.video2{
+	grid-area: video2;
+}
+
+.video_header{
+	grid-area: video_header;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 40px;
+	color: #562e02;
+	text-decoration: underline;
+	text-shadow:  3px -3px 3px #fee6b7, 5px -5px 4px #e7d780;
+	
+}
+
+.container_video{
+	background-image: url(images/spot_background.jpg);
+	background-size: cover;
+	padding: 30px;
+	display: grid;
+	grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+	grid-template-areas: "video1 video_header" "video2 .";
+	grid-row-gap: 15px;
+}
+
+.container_about{
+	display: grid;
+	grid-template-columns: 400px 500px auto;
+    grid-template-rows: auto auto auto auto auto;
+	grid-template-areas: "navigation navigation navigation" "film_name . spot" "film_about . spot" "film_about . arlo" "studio_logo . arlo";
+	padding: 50px;
+	grid-row-gap: 15px;
+	justify-items: center;
+	align-items: center;
+	background-image: url(images/GD_poster.png);
+	background-size: cover;
+}	
+
+header{
+	grid-area: navigation;
+	
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+}
+
+nav li{
+	color: #d3fbff;
+	padding: 10px 20px;
+	border-bottom: 6px solid; 
+	font-family: 'Philosopher', sans-serif;
+	
+}
+
+nav li:hover{
+	text-shadow: 3px 3px 3px #39fdc2, -3px -3px 3px #39fdc2;
+	
+	border-bottom: 6px solid #39fdc2;
+}
+
+ a{
+	text-decoration: none;
+	color: #d3fbff;
+}
+
+
+.film_name{
+	grid-area: film_name;
+	color: #016f48;
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 30px;
+	text-decoration: underline;
+	text-shadow:  -3px -3px 3px #39fdc2, -5px -5px 4px #c0fded;
+}
+
+.film_about{
+	grid-area: film_about;
+	width: 300px;
+	padding: 15px;
+	background-color: rgba(51, 105, 173, 0.7);
+	color: #d3fbff;
+	text-align: center;
+	font-family: 'Neucha', cursive;
+}
+
+.studio_logo{
+	grid-area: studio_logo;
+}
+
+.spot_about{
+	grid-area: spot;
+	text-align: center;
+	background-color: rgba(250, 250, 250, 0.9);
+	padding: 15px;
+	font-family: 'Neucha', cursive;
+}
+
+.arlo_about{
+	grid-area: arlo;
+	text-align: center;
+	background-color: rgba(250, 250, 250, 0.9);
+	padding: 15px;
+	font-family: 'Neucha', cursive;
+}
+
+
+
+
+
+
